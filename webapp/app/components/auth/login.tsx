@@ -110,7 +110,11 @@ export default function Login({ dictionary }: { dictionary: DictionaryType }) {
         </form>
       </AuthWrapper>
 
-      <SecureAccount open={openSecureAccount} setOpen={setOpenSecureAccount} />
+      <SecureAccount
+        open={openSecureAccount}
+        setOpen={setOpenSecureAccount}
+        dictionary={dictionary}
+      />
     </>
   );
 }

@@ -15,6 +15,18 @@
     "last_name": "Apellido",
     "primary_phone_number": "Número de teléfono principal",
     "residential": "Residencial",
-    "commercial": "Comercial"
+    "commercial": "Comercial",
+    "secure_your_account": "Proteja su cuenta",
+    "confirm_your_phone_number": "Confirme su número de teléfono",
+    "receive_authentication_via_phone": "Recibir autenticación por teléfono",
+    "please_enter_the_6_digits_code_sent_to": "Por favor, introduzca el código de 6 dígitos enviado a",
+    "use_accessible_phone_number": "Asegúrese de usar un número de teléfono al que tenga acceso siempre que planee iniciar sesión",
+    "text_or_data_rates_may_apply": "Pueden aplicarse tarifas de texto o datos.",
+    "continue": "Continuar",
+    "text_me": "Envíame un mensaje",
+    "call_me": "Llámame",
+    "go_back": "Regresar",
+    "thanks_for_verifying_its_you": "¡Gracias por verificar que eres tú!",
+    "logging_you_in": "Un momento, estamos iniciando sesión..."
   }
 }
