@@ -27,6 +27,10 @@
     "call_me": "Llámame",
     "go_back": "Regresar",
     "thanks_for_verifying_its_you": "¡Gracias por verificar que eres tú!",
-    "logging_you_in": "Un momento, estamos iniciando sesión..."
+    "logging_you_in": "Un momento, estamos iniciando sesión...",
+    "confirm_your_email": "Por favor confirme su correo electrónico",
+    "account_creation_thanks": "Gracias por crear una cuenta. ¡Ya casi está!",
+    "account_creation_message": "En unos minutos, recibirá un correo electrónico con un enlace de confirmación. Por favor confirme su correo electrónico para completar la configuración de su cuenta.",
+    "back_to_log_in": "Volver a iniciar sesión"
   }
 }

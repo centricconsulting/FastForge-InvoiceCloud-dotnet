@@ -27,6 +27,10 @@
     "call_me": "Call Me",
     "go_back": "Go Back",
     "thanks_for_verifying_its_you": "Thanks for verifying it’s you!",
-    "logging_you_in": "One moment, we’re logging you in..."
+    "logging_you_in": "One moment, we’re logging you in...",
+    "confirm_your_email": "Please Confirm Your Email",
+    "account_creation_thanks": "Thanks for creating an account. You’re almost done!",
+    "account_creation_message": "In a few minutes, you’ll receive an email with a confirmation link. Please confirm your email to complete your account set up.",
+    "back_to_log_in": "Back to Log In"
   }
 }
