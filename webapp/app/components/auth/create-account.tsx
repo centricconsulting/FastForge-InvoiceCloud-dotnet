@@ -72,9 +72,9 @@ export default function CreateAccount({
   } = formik.touched;
 
   return (
-    <AuthWrapper title={"Create Your Account"}>
-      <p className="text-xs mt-6 text-gray-mid">
-        <span className="text-error mr-1">*</span>Required fields
+    <AuthWrapper title={dictionary.auth.create_your_account}>
+      <p className="font-sans font-bold text-xs mt-6 text-gray-mid">
+        <span className="text-error mr-1">*</span>{dictionary.auth.required_fields}
       </p>
       <form onSubmit={formik.handleSubmit}>
         <div className="my-6 grid md:grid-cols-2 gap-4">
@@ -133,7 +133,7 @@ export default function CreateAccount({
         </div>
         <div className="my-6">
           <Input
-            hint="Password must contain at least 8 characters and include at least one of each of the following: an uppercase letter, a lowercase letter, a number and a special symbol (!, @, #, $, %, ^, & or *)"
+            hint={dictionary.auth.password_hint}
             label={dictionary.auth.password}
             type="password"
             name="password"
@@ -147,11 +147,11 @@ export default function CreateAccount({
         <div className="my-6">
           <Input
             required
-            label="Confirm Password"
+            label={dictionary.auth.confirm_password}
             type="password"
             name="confirmPassword"
             id="confirmPassword"
-            placeholder="Confirm Password"
+            placeholder={dictionary.auth.confirm_password}
             error={
               confirmPasswordTouched && confirmPasswordError
                 ? confirmPasswordError
@@ -168,16 +168,16 @@ export default function CreateAccount({
         />
         <label
           htmlFor="terms"
-          className="text-base font-semibold ml-2 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
+          className="font-sans text-base font-semibold ml-2 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
         >
-          I agree to the{" "}
-          <Link href="/" className="text-primary underline">
-            Terms and Conditions
+          {dictionary.auth.agree_to}
+          <Link href="/" className="text-primary underline">            
+            {dictionary.auth.terms_and_conditions}
           </Link>
         </label>
 
         <Button disabled={!agree} type="submit" className="mt-12">
-          CREATE ACCOUNT
+          {dictionary.auth.create_account_in_uppercase}
         </Button>
       </form>
     </AuthWrapper>

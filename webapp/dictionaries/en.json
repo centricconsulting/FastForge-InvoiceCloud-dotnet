@@ -27,6 +27,13 @@
     "call_me": "Call Me",
     "go_back": "Go Back",
     "thanks_for_verifying_its_you": "Thanks for verifying it’s you!",
-    "logging_you_in": "One moment, we’re logging you in..."
+    "logging_you_in": "One moment, we’re logging you in...",
+    "create_your_account": "Create Your Account",
+    "required_fields": "Required fields",
+    "password_hint": "Password must contain at least 8 characters and include at least one of each of the following: an uppercase letter, a lowercase letter, a number and a special symbol (!, @, #, $, %, ^, & or *)",
+    "confirm_password": "Confirm Password",
+    "agree_to": "I agree to the ",
+    "terms_and_conditions": "Terms and Conditions",
+    "create_account_in_uppercase": "CREATE ACCOUNT"
   }
 }
