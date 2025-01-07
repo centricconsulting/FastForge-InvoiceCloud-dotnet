@@ -27,6 +27,13 @@
     "call_me": "Llámame",
     "go_back": "Regresar",
     "thanks_for_verifying_its_you": "¡Gracias por verificar que eres tú!",
-    "logging_you_in": "Un momento, estamos iniciando sesión..."
+    "logging_you_in": "Un momento, estamos iniciando sesión...",
+    "create_your_account": "Crea tu cuenta",
+    "required_fields": "Campos obligatorios",
+    "password_hint": "La contraseña debe contener al menos 8 caracteres e incluir al menos uno de cada uno de los siguientes: una letra mayúscula, una letra minúscula, un número y un símbolo especial (!, @, #, $, %, ^, & o *)",
+    "confirm_password": "confirmar Contraseña",
+    "agree_to": "Estoy de acuerdo con el ",
+    "terms_and_conditions": "Términos y condiciones",
+    "create_account_in_uppercase": "CREAR UNA CUENTA"
   }
 }
