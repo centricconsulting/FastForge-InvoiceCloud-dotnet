@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import AuthWrapper from "./auth-wrapper";
 import { DictionaryType } from "@/types";
+import Link from "next/link";
 
 export default function ConfirmEmail({
   dictionary,
@@ -22,7 +23,7 @@ export default function ConfirmEmail({
         type="submit"
         className="mt-6 uppercase font-bold text-base tracking-[0.5px]"
       >
-        {dictionary.auth.back_to_log_in}
+        <Link href="/login">{dictionary.auth.back_to_log_in}</Link>
       </Button>
     </AuthWrapper>
   );
