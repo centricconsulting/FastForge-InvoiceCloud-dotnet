@@ -32,5 +32,12 @@
     "account_creation_thanks": "Thanks for creating an account. You’re almost done!",
     "account_creation_message": "In a few minutes, you’ll receive an email with a confirmation link. Please confirm your email to complete your account set up.",
     "back_to_log_in": "Back to Log In"
+    "create_your_account": "Create Your Account",
+    "required_fields": "Required fields",
+    "password_hint": "Password must contain at least 8 characters and include at least one of each of the following: an uppercase letter, a lowercase letter, a number and a special symbol (!, @, #, $, %, ^, & or *)",
+    "confirm_password": "Confirm Password",
+    "agree_to": "I agree to the ",
+    "terms_and_conditions": "Terms and Conditions",
+    "create_account_in_uppercase": "CREATE ACCOUNT"
   }
 }
