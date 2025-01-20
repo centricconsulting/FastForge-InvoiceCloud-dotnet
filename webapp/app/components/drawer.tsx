@@ -10,8 +10,7 @@ import {
   Wallet2,
 } from "lucide-react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const DRAWER_ITEMS = [
   { title: "Home", Icon: Home, link: "" },
@@ -26,7 +25,7 @@ export default function Drawer({ lang }: { lang: Locale }) {
   const pathName = usePathname();
 
   return (
-    <nav className="w-[85px] h-[calc(100vh-2px)] border-[#A3A4A6] border bg-white flex-none top-0 absolute left-0 pt-[70px] max-h-[854px]">
+    <nav className="w-[85px] fixed h-[calc(100vh-2px)] shadow-[0px_0px_4px_0px_#28437333] bg-white flex-none top-0 left-0 pt-[70px] max-h-screen">
       <ul className="flex flex-col justify-center items-between h-full">
         {DRAWER_ITEMS.map((el, index) => {
           const { title, Icon, link } = el;

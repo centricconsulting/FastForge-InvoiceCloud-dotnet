@@ -9,7 +9,7 @@ export default function Layout({
   params: { lang: Locale };
 }) {
   return (
-    <div className="flex h-screen flex-col md:flex-row md:overflow-hidden max-w-screen-2xl m-auto relative">
+    <div className="flex min-h-screen flex-col md:flex-row md:overflow-hidden max-w-screen-2xl m-auto relative bg-[#F4F6FC]">
       <Drawer lang={lang} />
 
       <div className="ml-[85px] mt-[58px] p-4">{children}</div>
