@@ -12,8 +12,7 @@ interface RowProps {
   title: string;
   value: React.ReactNode;
 }
-
-export const Row = ({ title, value }: RowProps) => (
+const Row = ({ title, value }: RowProps) => (
   <div className="flex px-[10px] py-4 gap-32 border-b border-primary-foreground items-center">
     <div className="flex-1">
       <span className="text-black tracking-[0.5px] font-semibold">{title}</span>
