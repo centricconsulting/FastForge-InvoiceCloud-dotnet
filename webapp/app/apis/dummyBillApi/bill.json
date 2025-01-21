@@ -1,0 +1,16 @@
+[
+  {
+    "customerId": 123,
+    "dueDate": "04/30/2025",
+    "dueAmount": "$50",
+    "fromDate": "03/01/2025",
+    "toDate": "03/31/2025"
+  },
+  {
+    "customerId": 345,
+    "dueDate": "05/30/2025",
+    "dueAmount": "$30",
+    "fromDate": "04/01/2025",
+    "toDate": "04/31/2025"
+  }
+]

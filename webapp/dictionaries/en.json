@@ -39,5 +39,13 @@
     "agree_to": "I agree to the ",
     "terms_and_conditions": "Terms and Conditions",
     "create_account_in_uppercase": "CREATE ACCOUNT"
+  },
+  "billings": {
+    "current_bill": "Current Bill",
+    "utility_service": "Utility Service",
+    "due_on": "Due on",
+    "total_amount_due":"Total Amount Due",
+    "view_details":"View Details",
+    "make_payment":"Make Payment"
   }
 }
