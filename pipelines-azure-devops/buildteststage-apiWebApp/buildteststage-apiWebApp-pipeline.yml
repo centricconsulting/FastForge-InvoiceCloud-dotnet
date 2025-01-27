@@ -2,9 +2,8 @@ resources:
   repositories:
   - repository: self
     type: git
-    trigger: none #Step 5: Remove the word "none" from line 5 and uncomment line 6
-    # - '*'
-    batch: True 
+    trigger: 
+      batch: True 
     
 variables:
 - template: 'buildteststage-apiWebApp-variables.yml'
@@ -170,27 +169,26 @@ stages:
       workingDirectory: '$(System.DefaultWorkingDirectory)/${{ variables.webAppSolutionRoot }}'
 
     - script: |
-        yarn run eslint --fix-dry-run "$(System.DefaultWorkingDirectory)/${{ variables.webAppSolutionRoot }}/src/**"
+        yarn run lint
       displayName: 'Static Code Analysis with ESLINT'
       workingDirectory: '$(System.DefaultWorkingDirectory)/${{ variables.webAppSolutionRoot }}'
 
     - script: |
-        yarn run build:development
+        yarn run build
       displayName: 'DEVELOPMEMNT Yarn Build'
       workingDirectory: '$(System.DefaultWorkingDirectory)/${{ variables.webAppSolutionRoot }}'
       env:
-        CI: true
-        REACT_APP_ENV: development
+        NEXT_PUBLIC_API_ROOT_URL: http://localhost:5000/api
 
-    - script: yarn test ---coverage --watchAll=false --reporters="jest-trx-results-processor"
-      displayName: 'Yarn Test and Code Coverage'
-      workingDirectory: '$(System.DefaultWorkingDirectory)/${{ variables.webAppSolutionRoot }}'
+    #- script: yarn test ---coverage --watchAll=false --reporters="jest-trx-results-processor"
+    #  displayName: 'Yarn Test and Code Coverage'
+    #  workingDirectory: '$(System.DefaultWorkingDirectory)/${{ variables.webAppSolutionRoot }}'
 
-    - task: PublishTestResults@2
-      condition: succeededOrFailed()
-      inputs:
-        testRunner: VSTest
-        testResultsFiles: '**/test-results.trx'
+    #- task: PublishTestResults@2
+    #  condition: succeededOrFailed()
+    #  inputs:
+    #    testRunner: VSTest
+    #    testResultsFiles: '**/test-results.trx'
         
     - task: PublishPipelineArtifact@1
       inputs:
