@@ -1,6 +1,8 @@
 import CurrentBill from "@/app/components/dashboard/currentBill";
 import billingHistoryAPI from "@/app/apis/dummyMonthlyBillHistory";
 import MonthlyBillingHistory from "@/app/components/billing/MonthlyBillingHistory";
+import api from "@/app/apis/dummyPastBillsData";
+import PastBills from "@/app/components/billing/PastBills";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { Metadata } from "next";
@@ -17,7 +19,7 @@ export default async function BillingPage({
 }>) {
   const customerBill = dummyBillApi.getBill(123);
   const billHistoryData = billingHistoryAPI.getBillingHistory();
-
+  const billingHistory = api.getBillingHistory();
   const dictionary = await getDictionary(lang);
 
   return (
@@ -30,6 +32,7 @@ export default async function BillingPage({
           billHistoryData={billHistoryData}
         />
       </div>
+      <PastBills dictionary={dictionary} pastBillData={billingHistory} />
     </div>
   );
 }
