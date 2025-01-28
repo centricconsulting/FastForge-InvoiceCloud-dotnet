@@ -21,15 +21,15 @@ export default async function BillingPage({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="w-full gap-6 flex flex-col">
-      <div className="flex w-full items-center justify-between ">
-        <h1 className="text-4xl font-poppins font-bold">Pay My Bill</h1>
+    <div className="w-full flex flex-col">
+      <h1 className="my-6 text-4xl font-poppins font-bold">Pay My Bill</h1>
+      <div className="flex w-full gap-6">
+        <CurrentBill dictionary={dictionary} billDetails={customerBill} />
+        <MonthlyBillingHistory
+          dictionary={dictionary}
+          billHistoryData={billHistoryData}
+        />
       </div>
-      <CurrentBill dictionary={dictionary} billDetails={customerBill} />
-      <MonthlyBillingHistory
-        dictionary={dictionary}
-        billHistoryData={billHistoryData}
-      />
     </div>
   );
 }
