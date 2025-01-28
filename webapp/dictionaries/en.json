@@ -39,5 +39,14 @@
     "agree_to": "I agree to the ",
     "terms_and_conditions": "Terms and Conditions",
     "create_account_in_uppercase": "CREATE ACCOUNT"
+  },
+  "billings": {
+    "past_bills": "Past Bills",
+    "status": "Status",
+    "date": "Date",
+    "description": "Description",
+    "total": "Total",
+    "paid_on": "Paid on",
+    "view_payment_history": "View Payment History"
   }
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "status": "pending",
+    "date": "03/01/2023",
+    "description": "Electricity Service",
+    "period": "02/01/2023 - 02/28/2023",
+    "total": "$49.93",
+    "paidOn": "03/05/2023",
+    "statusColor": "bg-[#FFB61D33]"
+  },
+  {
+    "id": 2,
+    "status": "paid",
+    "date": "02/01/2023",
+    "description": "Electricity Service",
+    "period": "01/01/2023 - 01/31/2023",
+    "total": "$100.37",
+    "paidOn": "02/07/2023",
+    "statusColor": "bg-[#0DBA6133]"
+  },
+  {
+    "id": 3,
+    "status": "paid",
+    "date": "01/01/2022",
+    "description": "Electricity Service",
+    "period": "12/01/2022 - 12/31/2022",
+    "total": "$98.12",
+    "paidOn": "01/05/2023",
+    "statusColor": "bg-[#0DBA6133]"
+  },
+  {
+    "id": 4,
+    "status": "paid",
+    "date": "12/01/2022",
+    "description": "Electricity Service",
+    "period": "11/01/2022 - 11/30/2022",
+    "total": "$101.22",
+    "paidOn": "12/03/2022",
+    "statusColor": "bg-[#0DBA6133]"
+  },
+  {
+    "id": 5,
+    "status": "paid",
+    "date": "11/01/2022",
+    "description": "Electricity Service",
+    "period": "10/01/2022 - 10/31/2022",
+    "total": "$81.07",
+    "paidOn": "11/05/2022",
+    "statusColor": "bg-[#0DBA6133]"
+  },
+  {
+    "id": 6,
+    "status": "paid",
+    "date": "10/01/2022",
+    "description": "Electricity Service",
+    "period": "09/01/2022 - 09/30/2022",
+    "total": "$63.38",
+    "paidOn": "10/10/2022",
+    "statusColor": "bg-[#0DBA6133]"
+  }
+]

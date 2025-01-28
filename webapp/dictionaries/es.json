@@ -39,5 +39,14 @@
     "agree_to": "Estoy de acuerdo con el ",
     "terms_and_conditions": "Términos y condiciones",
     "create_account_in_uppercase": "CREAR UNA CUENTA"
+  },
+  "billings": {
+    "past_bills": "Facturas anteriores",
+    "status": "Estado",
+    "date": "Fecha",
+    "description": "Descripción",
+    "total": "Total",
+    "paid_on": "Pagado en",
+    "view_payment_history": "Ver historial de pagos"
   }
 }
