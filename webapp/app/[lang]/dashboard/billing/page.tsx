@@ -1,4 +1,6 @@
 import CurrentBill from "@/app/components/dashboard/currentBill";
+import billingHistoryAPI from "@/app/apis/dummyMonthlyBillHistory";
+import MonthlyBillingHistory from "@/app/components/billing/MonthlyBillingHistory";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { Metadata } from "next";
@@ -10,19 +12,24 @@ export const metadata: Metadata = {
 
 export default async function BillingPage({
   params: { lang },
-}: {
+}: Readonly<{
   params: { lang: Locale };
-}) {
+}>) {
   const customerBill = dummyBillApi.getBill(123);
+  const billHistoryData = billingHistoryAPI.getBillingHistory();
 
   const dictionary = await getDictionary(lang);
+
   return (
-    <div className="flex flex-row items-center w-full  justify-between">
-      <div className="w-[49%] bg-white">{"Account Details"}</div>
-      <CurrentBill
-        dictionary={dictionary}
-        billDetails={customerBill}
-      />
+    <div className="w-full flex flex-col">
+      <h1 className="my-6 text-4xl font-poppins font-bold">Pay My Bill</h1>
+      <div className="flex w-full gap-6">
+        <CurrentBill dictionary={dictionary} billDetails={customerBill} />
+        <MonthlyBillingHistory
+          dictionary={dictionary}
+          billHistoryData={billHistoryData}
+        />
+      </div>
     </div>
   );
 }
