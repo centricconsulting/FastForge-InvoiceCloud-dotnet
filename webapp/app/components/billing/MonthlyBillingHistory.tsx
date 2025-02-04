@@ -34,8 +34,8 @@ const MonthlyBillingHistory = ({
   const months = billHistoryData.map((yearData: any) =>
     yearData.data.map((monthData: any) => monthData.month)
   );
-  const uniqueMonths = [...new Set(months.flat())];
 
+  const uniqueMonths = Array.from(new Set<string>(months.flat()));
   const data: ChartData<"bar"> = {
     labels: uniqueMonths,
     datasets: billHistoryData.map((yearData: any) => ({

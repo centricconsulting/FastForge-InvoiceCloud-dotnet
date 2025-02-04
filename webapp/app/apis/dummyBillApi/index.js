@@ -1,6 +1,6 @@
 import _bill from "./bill.json";
 
-export default {
+const api = {
   getBill: (customerId) => {
     // Filter the bill data based on the customerId
     const bill = _bill.find((bill) => bill.customerId === customerId);
@@ -8,3 +8,5 @@ export default {
     return bill;
   },
 };
+
+export default api;
