@@ -40,13 +40,16 @@
     "terms_and_conditions": "Términos y condiciones",
     "create_account_in_uppercase": "CREAR UNA CUENTA"
   },
-  "billings":{
-    "current_bill":"Factura actual",
-    "utility_service":"Servicio de utilidad",
-    "due_on":"Vencimiento el",
-    "total_amount_due":"Monto total adeudado",
-    "view_details":"Ver detalles",
-    "make_payment":"Realizar pago"
-
+  "billings": {
+    "current_bill": "Factura actual",
+    "utility_service": "Servicio de utilidad",
+    "due_on": "Vencimiento el",
+    "total_amount_due": "Monto total adeudado",
+    "view_details": "Ver detalles",
+    "make_payment": "Realizar pago",
+    "monthly_billing_history": "Historial de facturación mensual",
+    "year_by_year_comparison": "Comparación año por año",
+    "monthly_service_cost_in_dollars": "Costo del servicio mensual en dólares",
+    "month": "Mes"
   }
 }

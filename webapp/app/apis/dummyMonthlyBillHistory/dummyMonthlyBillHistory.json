@@ -1,0 +1,92 @@
+[
+  {
+    "year": 2022,
+    "data": [
+      {
+        "month": "Jan",
+        "amount": 50
+      },
+      {
+        "month": "Feb",
+        "amount": 60
+      },
+      {
+        "month": "Mar",
+        "amount": 70
+      },
+      {
+        "month": "Apr",
+        "amount": 40
+      },
+      {
+        "month": "May",
+        "amount": 90
+      },
+      {
+        "month": "Jun",
+        "amount": 110
+      },
+      {
+        "month": "Jul",
+        "amount": 150
+      },
+      {
+        "month": "Aug",
+        "amount": 130
+      },
+      {
+        "month": "Sep",
+        "amount": 40
+      },
+      {
+        "month": "Oct",
+        "amount": 20
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "data": [
+      {
+        "month": "Jan",
+        "amount": 45
+      },
+      {
+        "month": "Feb",
+        "amount": 55
+      },
+      {
+        "month": "Mar",
+        "amount": 75
+      },
+      {
+        "month": "Apr",
+        "amount": 35
+      },
+      {
+        "month": "May",
+        "amount": 100
+      },
+      {
+        "month": "Jun",
+        "amount": 120
+      },
+      {
+        "month": "Jul",
+        "amount": 160
+      },
+      {
+        "month": "Aug",
+        "amount": 140
+      },
+      {
+        "month": "Sep",
+        "amount": 30
+      },
+      {
+        "month": "Oct",
+        "amount": 25
+      }
+    ]
+  }
+]

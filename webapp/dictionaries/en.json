@@ -46,6 +46,10 @@
     "due_on": "Due on",
     "total_amount_due":"Total Amount Due",
     "view_details":"View Details",
-    "make_payment":"Make Payment"
+    "make_payment":"Make Payment",
+    "monthly_billing_history": "Monthly Billing History",
+    "year_by_year_comparison": "Year by Year Comparison",
+    "monthly_service_cost_in_dollars": "Monthly Service Cost in dollars",
+    "month": "Month"
   }
 }
