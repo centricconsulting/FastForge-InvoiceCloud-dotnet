@@ -10,7 +10,6 @@ export default function PastBills({
   pastBillData: Array<{
     id: number;
     status: string;
-    statusColor: string;
     date: string;
     description: string;
     period: string;
@@ -19,7 +18,7 @@ export default function PastBills({
   }>;
 }>) {
   return (
-    <div className="bg-white p-6 shadow-[2px_2px_18px_0px_#00000014]">
+    <div className="bg-white p-6 shadow-[2px_2px_18px_0px_#00000014] max-w-[728px]">
       <h2 className="text-2xl tracking-wide font-poppins font-bold text-black">
         {dictionary.billings.past_bills}
       </h2>
@@ -45,7 +44,9 @@ export default function PastBills({
             <tr key={bill.id} className="border-b border-[#D6D8E7]">
               <td className="p-5">
                 <p
-                  className={`px-3 py-1 text-black text-xs font-bold rounded-full ${bill.statusColor} uppercase text-center`}
+                  className={`px-3 py-1 text-black text-xs font-bold rounded-full ${
+                    bill.status === "paid" ? "bg-[#0DBA6133]" : "bg-[#FFB61D33]"
+                  } uppercase text-center`}
                 >
                   {bill.status}
                 </p>
